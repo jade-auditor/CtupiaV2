@@ -6,6 +6,18 @@ This README exists because some setup steps (especially database connections) ar
 
 ---
 
+## 1. Contributors & Roles
+
+#### Jade Formentera - Database Design & Management
+* Responsible for all database-related work, including:
+  * Designing and structuring schemas (e.g. public, internal)
+  * Providing the database endpoints and RPC interfaces for integration into web and mobile apps
+#### Airielle Marie Arnado
+  * Responsible for building and maintaining the web application
+  * Integrates database endpoints into the 
+#### Rodnie Caracena Jr.
+
+
 ## 1. Requirements
 
 To follow the instructions in this repository, you need the following:
