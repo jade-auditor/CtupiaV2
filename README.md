@@ -26,14 +26,14 @@ To follow the instructions in this repository, you need the following:
 
     * Other schemas should remain unexposed unless explicitly required
   
-    * ![img.png](Read me/img.png)
+    * ![img.png](Readme/img.png)
 
 * Database Extensions needed:
   * Go to Database → Extensions
   * You may also need to create a new schema called "internal"
-  * ![img_3.png](Read me/img_3.png)
+  * ![img_3.png](Readme/img_3.png)
   * You may also need to create a new schema called "internal"
-  * ![img_3.png](Read me/img_3.png)
+  * ![img_3.png](Readme/img_3.png)
   
 * Storage configuration:
   * Go to Storage → Files → New Bucket
@@ -55,12 +55,12 @@ To follow the instructions in this repository, you need the following:
         * Size Limit: 2mb
         * Allowed Mime Types: image/jpeg, image/png
         * ##### Note Predefined/default avatars are needed. Please upload at least one wallpaper for accounts. Samples are located in file "Read me"
-    * ![img.png](Read me/img.png)
+    * ![img.png](Readme/img.png)
 
 * Email configuration:
   * Go to Authentication → Email
   * Change the templates of the emails. Emails templates are in Project Folder. Navigate to Read me → Email Templates.
-  * ![img.png](Read me/Screenshot from 2025-12-31 02-07-36.png)
+  * ![img.png](Readme/Screenshot from 2025-12-31 02-07-36.png)
 
 #### DataGrip
 
@@ -71,7 +71,7 @@ To follow the instructions in this repository, you need the following:
 * Establish connection which can be found directly at the upper center of Supabase's dashboard
 
 * GitHub plugin for DataGrip
-  * ![img_1.png](Read me/img_1.png)
+  * ![img_1.png](Readme/img_1.png)
   
 
   
