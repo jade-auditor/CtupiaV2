@@ -92,8 +92,7 @@ To follow the instructions in this repository, you need the following:
 ## 2. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd <project-folder>
+https://github.com/jade-auditor/CtupiaV2.git
 ```
 
 ## 3. Supabase Database Connection (IMPORTANT)
@@ -175,7 +174,7 @@ If in doubt, **reset it** and update your clients.
 ## 8. Project Structure (Example)
 
 ```
-Ctupia-Final/
+CtupiaV2/
 ├─ 1.) Internal Model & Functionalities/
 |       ├─ error codes.txt
 |       ├─ Internal Model.sql
