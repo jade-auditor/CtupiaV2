@@ -1,0 +1,97 @@
+===========================================
+ ERROR CODE REFERENCE (PostgreSQL / PLpgSQL)
+===========================================
+
+📝 Notes:
+- Custom codes use the SQLSTATE format (5 chars).
+- We'll reserve codes starting from P0010 upwards.
+- Group codes by module for clarity.
+
+
+-------------------------------------------
+ GENERAL ERRORS
+-------------------------------------------
+P0010 - Restricted use or access denied.
+P0014 - User doesn't exist.
+P0015 - (⚠ RESERVED, don't use) - Placeholder for functions/procedures that don't have custom exceptions
+P0016 - Out of field for parameter "platform_id". Invalid Platform. 1 - Web, 2 - Mobile.
+P0017 - At least 1 parameter is required for procedure/function to run.
+P0035 - No null parameter allowed OR PARAMETER requirement issue.
+P1000 - (⚠ RESERVED, don't use) - Only for invalid decoding sequence. invalid symbol "_" found while decoding base64 sequence
+P0041 - Uploaded File doesn't exist
+P0043 - Incomplete Parameter
+
+
+
+-------------------------------------------
+ USER ACCOUNT ADMINISTRATION ERRORS
+-------------------------------------------
+P0011 - Email/user already exists.
+P0012 - Field "College/Office" is missing.
+P0013 - Field "Faculty Rank" is missing.
+
+-------------------------------------------
+ PERSONAL PROFILE SETTINGS
+-------------------------------------------
+P0018 - Invalid Phone number.
+P0019 - Personal Information change reached limit.
+
+-------------------------------------------
+ ACADEMIC OFFERING MANAGEMENT
+-------------------------------------------
+P0020 - Field "Existing main program" is empty. Fields "Program name", "Program abbreviation", and "College/Office".
+P0021 - Field "Existing main program" is already provided. Fields "Program name", "Program abbreviation", and "College/Office" should be empty.
+P0022 - Field "Specialization name" or "Special abbreviation" is required.
+P0023 - This Primary Program already exist
+P0024 - This Specialization/major already exist
+P0025 - Field "Program abbreviation" is required.
+P0026 - 'Field "Program name" is required.'
+P0027 - Semester Duration to be inserted overlaps with other semesters in a prospectus.
+P0028 - 'The semesters entered does not belong to the same term type group. Please review it again.'
+P0029 - Duplicate semesters in a prospectus
+P0030 - Duplicate classifications in a prospectus
+P0031 - Duplicate course in a prospectus
+P0032 - Invalid course assignment due to chosen classification not being defined in the prospectus
+P0033 - Course Title already exist
+P0034 - 'New Starting period can't be greater or later than New Ending period.'
+P0036 - Unable to delete this item due to other rows from other tables depend on it
+P0037 - duplicate schedule isn't allowed
+P0038 - TEACHING LOAD CAPACITY EXCEEDED UPON ASSIGNING
+P0039 - prospectus course should be assigned to a seMESTER
+P0040 - Course schedule is in conflict with another course
+P0042 - Duplicate schedule
+P0055 - BULK Enrollment/Single transferee enrollment failed due to PROSPECTUS NOT HAVING A SCHEDULING YET
+P0056 - Student already enrolled in the course.
+P0057 - Course already approved and published
+P0058 - Course not yet ready for approval
+
+
+-------------------------------------------
+ MY LEARNING PROGRAMS
+-------------------------------------------
+P0044 - Request Payload/Token for attempt exam expired
+P0045 - Access denied. Nor permitted to take the exam or proceed further.
+P0046 - Test doesn't contain any questions.
+P0047 - You currently have an open/pending test/exam somewhere. Please close it first or wait till it closes.
+P0048 - Invalid Identity or Invalid doesnt match
+P0049 - test already closed
+P0065 - not allowed to ge tthe certificate cause they dropped from the course
+P0066 - Course not yet available
+
+
+
+-------------------------------------------
+ COURSE CREATOR STUDIO
+-------------------------------------------
+P0050 - Invalid Faculty Identity or Not permitted to do any action.
+P0051 - Can't proceed to Course Creator Studio due to its status either already published or pending for approval
+P0052 - All Course assessment weights should add up to 100%
+P0053 - Enrollment failed due to course not yet published.
+P0054 - Course doesn't exist
+P0059 - Course can't be submitted for review as course doesn't contain any content (e.g. lessons or assessments)
+P0060 - Lesson id doesn't exist
+P0061 - Cloning not allowed. Cloning only works with previous courses that are already published.
+P0062 - Course not eligible for cloning.
+P0063 - COurse assessment cant be deleted because it used as a reference for assignment and test/exam
+P0064 - Mark exceeds assigned maximum achievable points
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirm Your Sign Up</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f5f2;
+      color: #2a2a2a;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border-top: 6px solid #1b5e20;
+    }
+
+    .header {
+      background: linear-gradient(to right, #1b5e20, #c8e6c9);
+      padding: 30px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .bghead {
+      width: 550px;
+      max-width: 90%;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content h2 {
+      color: #1b5e20;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background: #1b5e20;
+      color: white !important;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(27, 94, 32, 0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background: #145a1f;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      font-size: 13px;
+      color: #888;
+      padding: 20px;
+      text-align: center;
+      background-color: #fef6ec;
+    }
+
+    .university {
+      font-size: 14px;
+      color: #caa86b;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+
+        .password-box {
+      margin-top: 25px;
+      padding: 15px 20px;
+      background: #f1f8e9;
+      border-left: 5px solid #1b5e20;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .password-box p {
+      margin: 0 0 8px 0;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .password {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1b5e20;
+      background: #fff;
+      padding: 10px 15px;
+      border: 1px dashed #1b5e20;
+      border-radius: 5px;
+      display: inline-block;
+      letter-spacing: 2px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img src="https://www.ctu.edu.ph/wp-content/uploads/2024/08/cropped-WEBSITE-UPPER-LOGO.png" class="bghead" alt="Ctupia Logo">
+      <h1>Welcome to Ctupia MOOC</h1>
+    </div>
+
+    <div class="content">
+      <h2>✅ Confirm Your Sign Up</h2>
+      <p>Hello and welcome!</p>
+      <p>You're just one step away from exploring world-class courses powered by <strong>Cebu Technological University</strong>.</p>
+      <p>Please click the button below to confirm your sign up and activate your account:</p>
+      <p><a href="{{ .ConfirmationURL }}" class="cta-button">Confirm My Email</a></p>
+      <p>If you didn’t create an account with Ctupia, you can safely ignore this email.</p>
+
+      <!-- Default password section -->
+      <div class="password-box">
+        <p>🔑 You may use this default password to log in after confirming your sign up:</p>
+        <div class="password">{{ .Data.pass_info }}</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      This message was sent by Ctupia MOOC. <br>
+      For help, contact our support team at <a href="mailto:support@youruniversity.edu.ph">support@youruniversity.edu.ph</a>.<br>
+      <div class="university">Republic of the Philippines – Cebu Technological University</div>
+    </div>
+  </div>
+
+</body>
+</html>
