@@ -212,7 +212,6 @@ CtupiaV2/
 Note: All of database's stored procedures are available on your API.
 Navigate to API Docs →  Stored Procedures. Stored procedures are in internal schema and has a wrapper function in Public schema. Please see the code for better understanding.
 
-The API endpoint supports POST (and in some cases GET) to execute the function.
 ---
 
 ## 10. Notes & Warnings
