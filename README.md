@@ -216,7 +216,6 @@ Navigate to API Docs →  Stored Procedures. Stored procedures are in internal s
 
 ## 10. Notes & Warnings
 
-* Never commit `.env` files
 * Never share database passwords
 * GUI tools behave differently than backend apps
 * When in doubt, prefer **poolers** over direct connections
