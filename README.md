@@ -5,19 +5,6 @@ This repository contains projects that rely on **Supabase (PostgreSQL)** and are
 This README exists because some setup steps (especially database connections) are **not obvious** and can easily fail if done incorrectly.
 
 ---
-
-## 1. Contributors & Roles
-
-#### Jade Formentera - Database Design & Management
-* Responsible for all database-related work, including:
-  * Designing and structuring schemas (e.g. public, internal)
-  * Providing the database endpoints and RPC interfaces for integration into web and mobile apps
-#### Airielle Marie Arnado
-  * Responsible for building and maintaining the web application
-  * Integrates database endpoints into the 
-#### Rodnie Caracena Jr.
-
-
 ## 1. Requirements
 
 To follow the instructions in this repository, you need the following:
@@ -66,13 +53,13 @@ To follow the instructions in this repository, you need the following:
       * profile-photo
         * Size Limit: 2mb
         * Allowed Mime Types: image/jpeg, image/png
-        * ##### Note Predefined/default avatars are needed. Please upload at least one wallpaper for accounts. Samples are located in file "Read me"
+        * ##### Note Predefined/default avatars are needed. Please upload at least one avatar for accounts. Samples are located in file "Read me"
     * ![img.png](Readme/img.png)
 
 * Email configuration:
   * Go to Authentication → Email
   * Change the templates of the emails. Emails templates are in Project Folder. Navigate to Read me → Email Templates.
-  * ![img.png](Readme/Screenshot from 2025-12-31 02-07-36.png)
+  * ![img_4.png](Readme/img_4.png)
 
 #### DataGrip
 
@@ -154,6 +141,7 @@ This is the **recommended and stable method** for DataGrip.
 
 This setup avoids network blocks and connection churn issues.
 
+
 ---
 
 ## 6. Database Password
@@ -218,8 +206,16 @@ CtupiaV2/
 * #### Note: Please run the sql files based on the order of the file structure.
 
 ---
+## 9. Entity Relationship Diagram
+![erd1.png](Readme/erd1.png)
 
-## 9. Notes & Warnings
+Note: All of database's stored procedures are available on your API.
+Navigate to API Docs →  Stored Procedures. Stored procedures are in internal schema and has a wrapper function in Public schema. Please see the code for better understanding.
+
+The API endpoint supports POST (and in some cases GET) to execute the function.
+---
+
+## 10. Notes & Warnings
 
 * Never commit `.env` files
 * Never share database passwords
@@ -228,7 +224,7 @@ CtupiaV2/
 
 ---
 
-## 10. Troubleshooting Checklist
+## 11. Troubleshooting Checklist
 
 Before asking for help, confirm:
 
@@ -237,6 +233,14 @@ Before asking for help, confirm:
 * [ ] SSL is enabled
 * [ ] Using Session Pooler for GUI tools
 * [ ] Network is not blocking the port
+
+---
+
+## 12. Related Projects
+
+Web App: https://github.com/airielle11/ctupia-mooc-web.git
+
+Mobile App: https://github.com/RodnieCaracena/CTUPIA-MobileApp.git
 
 ---
 
